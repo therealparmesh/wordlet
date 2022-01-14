@@ -1,5 +1,7 @@
+import words from './words';
+
 function App() {
-  return <div>Hello, World!</div>;
+  return <div>{words.join(' ')}</div>;
 }
 
 export default App;
