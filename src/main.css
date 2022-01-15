@@ -1,0 +1,130 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #121213;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Clear Sans', sans-serif;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+}
+.header {
+  display: flex;
+  flex: 0 0 50px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #3a3a3c;
+}
+.header-title {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 36px;
+  color: #d7dadc;
+  font-size: 36px;
+  font-weight: bold;
+  user-select: none;
+}
+.board {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.board-grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+  margin: 10px;
+}
+.board-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+.board-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  text-transform: uppercase;
+  line-height: 32px;
+  color: #d7dadc;
+  font-size: 32px;
+  font-weight: bold;
+  user-select: none;
+}
+.board-tile-highlighted {
+  box-sizing: border-box;
+  border: 2px solid #565758;
+  background-color: #121213;
+}
+.board-tile-empty {
+  box-sizing: border-box;
+  border: 2px solid #3a3a3c;
+}
+.board-tile-correct {
+  background-color: #538d4e;
+}
+.board-tile-partially-correct {
+  background-color: #b59f3b;
+}
+.board-tile-used {
+  background-color: #3a3a3c;
+}
+.keyboard {
+  margin: 0 8px;
+}
+.keyboard-row {
+  display: flex;
+  margin: 0 0 8px;
+  width: 100%;
+}
+.keyboard-key {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  margin: 0 6px 0 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #818384;
+  cursor: pointer;
+  padding: 0;
+  height: 60px;
+  text-transform: uppercase;
+  color: #d7dadc;
+  font-weight: bold;
+  user-select: none;
+  touch-action: manipulation;
+}
+.keyboard-key-action {
+  flex: 1.5;
+}
+.keyboard-key-correct {
+  background-color: #538d4e;
+}
+.keyboard-key-partially-correct {
+  background-color: #b59f3b;
+}
+.keyboard-key-used {
+  background-color: #3a3a3c;
+}
+.keyboard-spacer {
+  flex: 0.5;
+}
