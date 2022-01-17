@@ -128,3 +128,20 @@ body {
 .keyboard-spacer {
   flex: 0.5;
 }
+.toast {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  width: fit-content;
+}
+.toast-message {
+  border-radius: 4px;
+  background-color: #d7dadc;
+  padding: 16px;
+  text-transform: uppercase;
+  color: #121213;
+  font-weight: bold;
+  user-select: none;
+}

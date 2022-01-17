@@ -1,3 +1,4 @@
+import Toast from './Toast';
 import Header from './Header';
 import Board from './Board';
 import Keyboard from './Keyboard';
@@ -33,6 +34,10 @@ function App() {
         onEnter={onEnter}
         {...getGuessedCorrectness(guessed, answer)}
       />
+      {isDefeat(guessed, answer) && (
+        <Toast message={`defeat! answer: ${answer}`} />
+      )}
+      {isVictory(guessed, answer) && <Toast message="victory!" />}
     </div>
   );
 }
