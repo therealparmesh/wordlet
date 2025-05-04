@@ -5756,7 +5756,7 @@ const words = [
   'roble',
   'rumba',
   'biffy',
-  'pupa',
+  'pupal',
 ];
 
 export default words;
